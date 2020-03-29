@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(cmake VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+project(homework VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 find_package(Threads REQUIRED)
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
@@ -42,7 +42,7 @@ set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
 set(CPACK_PACKAGE_VERSION_MINOR "${PROJECT_VERSION_MINOR}")
 set(CPACK_PACKAGE_VERSION_PATCH "${PROJECT_VERSION_PATCH}")
 
-set(CPACK_PACKAGE_CONTACT shebdim@gmail.com)
+set(CPACK_PACKAGE_CONTACT b.nazarenko@gmail.com)
 
 set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
 
