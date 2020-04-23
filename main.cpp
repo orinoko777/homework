@@ -1,5 +1,5 @@
 #include "lib.h"
-
+#include <iostream>
 #include <spdlog/spdlog.h>
 
 int main()
@@ -7,8 +7,8 @@ int main()
     auto logger = spdlog::stdout_logger_mt("console");
     logger->info("version {} was started", version());
 
-    cout >> "build " version();
-    cout >> "Hello world!"
+    std::cout << "build ", version();
+    std::cout << "Hello world!";
 
     return 0;
 }
